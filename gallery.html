@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chiranjiv Goyal</title>
+        <meta charset="UTF-8">
+        <meta rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="galleryStyle.css" />
+        <!-- <style type="text/css">
+            body{
+                color: purple;
+                background-color: #d8da3d;
+            }
+
+        </style> -->
+    </head>
+
+    <body>
+    	
+    	<ul class="navbar">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>            
+        </ul>
+
+        <div style="text-align:center">
+  		<h2>Tabbed Image Gallery</h2>
+  		<p>Click on the images below:</p>
+		</div>
+
+		<!-- The four columns -->
+		<div class="row">
+  			<div class="column">
+    			<img src="image1.jpg" alt="My best pose" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="image2.jpg" alt="Get a pet" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="DSC02908.jpg" alt="Desert" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="DSC03339.jpg" alt="Jaiselmer" style="width:100%" onclick="myFunction(this);">
+  			</div>
+		</div>
+
+		<div class="container">
+  			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  			<img id="expandedImg" style="width:80%">
+  			<div id="imgtext"></div>
+		</div>
+
+		<script>
+			function myFunction(imgs) {
+  				var expandImg = document.getElementById("expandedImg");
+  				var imgText = document.getElementById("imgtext");
+  				expandImg.src = imgs.src;
+  				imgText.innerHTML = imgs.alt;
+  				expandImg.parentElement.style.display = "block";
+			}
+		</script>
+
+    </body>
+
+</html>

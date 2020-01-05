@@ -1,0 +1,108 @@
+body {
+	padding-left: 11em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: purple;
+	background-color: black;
+	/*background-image: black;*/
+	/*background-repeat: no-repeat;*/
+	background-attachment: fixed;
+	background-size: 100% 100%;	
+}
+
+h1 {
+	font-family: Helevtica, Geneva, Arial,
+				SunSans-Regular, sans-serif;
+}
+
+ul.navbar {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 2em;
+	left: 1em;
+	width:9em;
+}
+
+ul.navbar li {
+	background: purple;
+	margin: 0.5em 0;
+	padding: 0.3em;
+	border-right: 1em solid black
+}
+
+ul.navbar a {
+	color: black;
+	text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+a:link {
+	color:blue;
+}
+ 
+a:visited {
+	color:purple;
+}
+
+address {
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: thin dotted;
+}
