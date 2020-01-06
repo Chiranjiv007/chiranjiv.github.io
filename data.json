@@ -1,0 +1,21 @@
+{
+	"images":[
+	{
+		"src": "DSC02908.jpg",
+		"alt":"Desert",
+
+	},
+	{
+		"src": "image2.jpg", 
+		"alt":"Get a pet"
+	},
+	{
+		"src":"image1.jpg", 
+		"alt":"My best pose"
+	}
+	{
+		"src":"DSC03339.jpg", 
+		"alt":"Jaiselmer"
+	}
+	]
+}
