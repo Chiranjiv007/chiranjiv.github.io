@@ -3,7 +3,7 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: purple;
 	/*background-color: #d8da3d;*/
-	background-image: url('44296.jpg');
+	background-image: url('/images/44296.jpg');
 	/*background-repeat: no-repeat;*/
 	background-attachment: fixed;
 	background-size: 100% 100%;	
