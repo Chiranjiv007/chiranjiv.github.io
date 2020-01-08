@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chiranjiv Goyal</title>
+        <meta charset="UTF-8">
+        <meta rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
+        <link rel="stylesheet" type="text/css" href="/style/galleryStyle.css" />
+        <script type="text/javascript" src="/script/script.js"></script>
+    </head>
+
+    <body>
+
+
+    	
+    	<ul class="navbar">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="galleryAdmin.html">Gallery Admin</a></li>            
+      </ul>
+
+      <div>
+        <button id="addImage" type="button"  value="Add Image">Add Image</button>
+        <div id="add">
+          <br>
+          <form id="add" name="add" style="display: flex; width: 30%" onsubmit="return (validateForm('add') && loadDoc('add'))">
+            
+            <div>URL:<br><input type="text" style="margin-right:30px;" name="src" /></div>
+            <div>Name: <br>
+            <input type="text" style="margin-right:30px" name="Name"/></div>
+            <div>Info:<br>
+            <input type="text" style="margin-right:30px" name="info" /></div>
+            <div>Date:<br>
+            <input type="date" style="margin-right:30px" name="date"/></div>
+            <div><br><input type="submit" style="margin-right:30px" name="Submit"/></div>
+          </form>
+        </div>
+
+        
+
+        <script type="text/javascript">
+          document.getElementById("addImage").addEventListener("click",showForm('addImage','add'));
+
+        </script>          
+        <pre id="output"></pre>
+      </div>
+
+      <div>
+        <br><br>
+        <input id="EditImage" type="button" value="Edit Image"/>
+        <div id="edit">
+          <br>
+          <form id="edit" name="edit" style="display: flex; width: 30%" onsubmit="return (validateForm('edit') && loadDoc('edit'))">
+            
+            <div>
+            URL:
+            <input type="text" style="margin-right:30px" name="src"></div>
+            <div>Name:<br>
+            <input type="text" style="margin-right:30px" name="Name"></div>
+            <div>Info:<br>
+            <input type="text" style="margin-right:30px" name="info"></div>
+            <div>Date:<br>
+            <input type="date" style="margin-right:30px" name="date"></div>
+            <div><br>
+            <input type="submit" style="margin-right:0px" name="Submit"/></div>
+          </form>
+        </div>
+
+        <script type="text/javascript">
+          document.getElementById("EditImage").addEventListener("click",showForm('EditImage','edit'));
+        </script>
+
+      </div>      
+
+      <div>
+        <br><br>
+        <input id="deleteImage" type="button" value="Delete Image"/>
+        <div id="edit">
+          <br>
+          <form id="delete" name="delete" style="display: flex; width: 30%" onsubmit="return (validateDelForm('delete') && loadDoc('delete'))">
+            <div>
+            URL:
+            <input type="text" style="margin-right:30px" name="src"></div>
+            <div><br><input type="submit" style="margin-right:30px" name="Submit"/></div>
+          </form>
+        </div>
+
+        <script type="text/javascript">
+          document.getElementById("deleteImage").addEventListener("click",showForm('deleteImage','delete'));
+        </script>
+
+      </div>
+
+    </body>
+
+</html>
